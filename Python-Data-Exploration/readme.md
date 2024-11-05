@@ -97,17 +97,11 @@ Now we'll replace the correct values in the correct corresponding columns. We'll
     df_sup.loc[df_sup['Customer Street'].isin(['Elk Grove', 'El Monte']), 'Customer City'] = df_sup.loc[df_sup['Customer Street'].isin(['Elk Grove', 'El Monte']), 'Customer Street']
     df_sup.loc[df_sup['Customer Street'].isin(['Elk Grove', 'El Monte']), 'Customer Street'] = 'Undefined'
 
+![Python_df_sup2_info7.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup2_info7.jpg?raw=true)
+
 *Customer email* and *Customer Password* has 1 unique value of *XXXXXXXXX*. This most likely the result of a security mask. We can drop these 2 columns from *df_sup*.
 
-image
-
     df_sup.drop(columns=['Customer Email', 'Customer Password'], inplace=True)
-
-
-
-
-
-
 
 
 
