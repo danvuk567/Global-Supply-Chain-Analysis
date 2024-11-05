@@ -110,5 +110,7 @@ Now we'll replace the correct values in the correct corresponding columns. We'll
 
 *Order Zipcode* has too many nulls. Let's drop this column from *df_sup*.
 
+        df_sup.drop(columns=['Order Zipcode'], inplace=True)
+
 
 
