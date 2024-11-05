@@ -103,7 +103,10 @@ Now we'll replace the correct values in the correct corresponding columns. We'll
 
     df_sup.drop(columns=['Customer Email', 'Customer Password'], inplace=True)
 
-
+![Python_df_sup3_info1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup3_info1.jpg?raw=true)
+![Python_df_sup3_info2.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup3_info2.jpg?raw=true)
+![Python_df_sup3_info3.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup3_info3.jpg?raw=true)
+![Python_df_sup3_info4.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup3_info4.jpg?raw=true)
 
 *Order Zipcode* has too many nulls. Let's drop this column from *df_sup*.
 
