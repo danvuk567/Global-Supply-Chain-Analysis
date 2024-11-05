@@ -112,5 +112,9 @@ Now we'll replace the correct values in the correct corresponding columns. We'll
 
         df_sup.drop(columns=['Order Zipcode'], inplace=True)
 
+![Python_df_sup4_info1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup4_info1.jpg?raw=true)
+![Python_df_sup4_info2.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup4_info2.jpg?raw=true)
+![Python_df_sup4_info3.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup4_info3.jpg?raw=true)
+
 
 
