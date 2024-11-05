@@ -45,7 +45,7 @@ In *df_sup2*, *Customer Lname* and *Customer Zipcode* have some null values. We 
 
 In looking at the nulls for *Customer Zipcode*, it appears that the Zipcode is in *Customer State*, the State is in *Customer City* and the City is in *Customer Street*. The Zipcodes appear to be valid as there are 10 unique Customer Streets with the same Zipcode.
 
-image
+![Python_df_sup2_info5.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup2_info5.jpg?raw=true)
 
 Let's check which Customer columns have values in other columns. 
 
@@ -88,7 +88,7 @@ Let's check which Customer columns have values in other columns.
     else:
         print("No matches found.")
 
-image
+![Python_df_sup2_info6.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup2_info6.jpg?raw=true)
 
 Now we'll replace the correct values in the correct corresponding columns. We'll leave the Street Names as 'Undefined' since there does't appear to be any unique Street Names for those locations.
 
