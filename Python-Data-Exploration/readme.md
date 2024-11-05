@@ -8,7 +8,7 @@ The 1st step is to load the csv file and take a look at the columns. There are 5
     df_sup = pd.read_csv(f_path, encoding='ISO-8859-1')
     df_sup.columns
 
-Python_df_sup_columns.jpg
+![Python_df_sup_columns.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup_columns.jpg?raw=true)
 
     split_ind1 = df_sup.columns.get_loc("Category Id")
     df_sup1 = df_sup.iloc[:, :split_ind1] 
