@@ -116,5 +116,11 @@ Now we'll replace the correct values in the correct corresponding columns. We'll
 ![Python_df_sup4_info2.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup4_info2.jpg?raw=true)
 ![Python_df_sup4_info3.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup4_info3.jpg?raw=true)
 
+*Product Description* is null. *Product Status’ only has one value of 0. Drop both columns from *df_sup*.
+
+        df_sup.drop(columns=['Product Description', 'Product Status'], inplace=True)
+
+
+
 
 
