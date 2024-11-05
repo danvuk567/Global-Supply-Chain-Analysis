@@ -29,7 +29,8 @@ The 1st step is to load the csv file and take a look at the columns. There are 5
 
 For *df_sup1* dataframe, there are no nulls and there are more than 1 unique values per column. 
 
-image
+![Python_df_sup1_info1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup1_info1.jpg?raw=true)
+![Python_df_sup1_info2.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup1_info2.jpg?raw=true)
 
 In *df_sup2*, *Customer Lname* and *Customer Zipcode* have some null values. We will fill *Customer Lname* with blanks and combine *Customer Fname* and *Customer Lname* into one column called *Customer Name*. *Customer Fname* and *Customer Lname* are then dropped from *df_sup*.
 
