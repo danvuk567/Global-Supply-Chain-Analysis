@@ -120,6 +120,108 @@ Now we'll replace the correct values in the correct corresponding columns. We'll
 
         df_sup.drop(columns=['Product Description', 'Product Status'], inplace=True)
 
+Let's do a check for columns that have all the same values.
+
+        matches_dict = {}
+
+        # Get the columns of the DataFrame
+        columns = df_sup.columns
+
+        # Iterate over pairs of columns
+        for i in range(len(columns)):
+            for j in range(i + 1, len(columns)):
+                col1 = columns[i]
+                col2 = columns[j]
+        
+                # Check if the columns match for all rows
+                if (df_sup[col1] == df_sup[col2]).all():
+                    # Create a tuple
+                    match_tuple = (col1, col2)
+            
+                    # Ensure that reverse tuples are not added
+                    if (col2, col1) not in matches_dict.keys():
+                        matches_dict[match_tuple] = True  # Store the match as True or any value
+
+        # Print the matches found
+        if matches_dict:
+            print("Matches found:", matches_dict)
+        else:
+            print("No matches found.")
+
+![Python_df_sup_duplicates.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup_duplicates.jpg?raw=true)
+
+        df_sup.drop(columns=['Benefit per order', 'Sales per customer', 'Product Category Id', 'Order Customer Id', 'Order Item Product Price', 'Order Item Cardprod Id'], inplace=True)
+
+We can also split up the dates for Orders and Shipping into Date format and Time format in case we want to work with date and time format separately.
+
+        df_sup['order date (DateOrders)'] = pd.to_datetime(df_sup['order date (DateOrders)'])
+        df_sup['Order Date'] = df_sup['order date (DateOrders)'].dt.date
+        df_sup['Order Time'] = df_sup['order date (DateOrders)'].dt.time
+        
+        df_sup['shipping date (DateOrders)'] = pd.to_datetime(df_sup['shipping date (DateOrders)'])
+        df_sup['Shipping Date'] = df_sup['shipping date (DateOrders)'].dt.date
+        df_sup['Shipping Time'] = df_sup['shipping date (DateOrders)'].dt.time
+
+        df_sup.drop(columns=['order date (DateOrders)', 'shipping date (DateOrders)'], inplace=True)
+
+Now, let's look at how we can build a relational data model based on min and max unique values as a type of normalization technique. For Orders, let's look at the 1st set of columns to see which ones are unique to *Order Id* so they can split out into separate tables.
+
+        df_ord1 = df_sup[['Type', 'Days for shipping (real)', 'Days for shipment (scheduled)',
+               'Delivery Status', 'Late_delivery_risk', 'Category Id', 'Category Name', 'Customer Name','Customer City', 
+               'Customer Country', 'Customer Id', 'Customer Segment', 'Customer State',
+               'Customer Street', 'Customer Zipcode','Order Id']]
+
+        ord1_unique_counts = df_ord1.groupby('Order Id').agg(lambda x: x.nunique()).reset_index()
+        ord1_min_max_values = ord1_unique_counts.agg(['min', 'max']).reset_index()
+        print(ord1_min_max_values)
+
+![Python_df_ord_agg1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_ord_agg1.jpg?raw=true)
+
+We see that all columns have unique values except the Category columns. This indicates that *Category Id* and *Category Name* can taken out of the *Orders* table.
+
+        df_ord2 = df_sup[['Department Id','Department Name', 'Latitude', 'Longitude', 'Market', 'Order City',
+               'Order Country', 'Order Item Discount','Order Item Discount Rate', 'Order Item Id', 
+               'Order Item Profit Ratio','Order Item Quantity', 'Sales', 'Order Item Total',
+               'Order Profit Per Order','Order Id']]
+
+        ord2_unique_counts = df_ord2.groupby('Order Id').agg(lambda x: x.nunique()).reset_index()
+        ord2_min_max_values = ord2_unique_counts.agg(['min', 'max']).reset_index()
+        print(ord2_min_max_values)
+        
+![Python_df_ord_agg2.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_ord_agg2.jpg?raw=true)
+
+We see that the Department columns and Order Item columns don't have unique values. These can be taken out of the *Orders* table.
+
+        df_ord3 = df_sup[['Order Region', 'Order State', 'Order Status',
+               'Product Card Id', 'Product Image', 'Product Name', 'Product Price',
+               'Shipping Mode', 'Order Date', 'Order Time',
+               'Shipping Date', 'Shipping Time', 'Order Id']]
+
+        ord3_unique_counts = df_ord3.groupby('Order Id').agg(lambda x: x.nunique()).reset_index()
+        ord3_min_max_values = ord3_unique_counts.agg(['min', 'max']).reset_index()
+        print(ord3_min_max_values)
+
+![Python_df_ord_agg3.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_ord_agg3.jpg?raw=true)
+
+Here the Product columns don't have unique values. These can be taken out of the *Orders* table.
+
+There is a *Customer Id* column which implies a unique Customer record. Let's see if we have multiple orders per customer so that we can create a seperate Dimension table for customers.
+
+![Python_df_cust_agg1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_cust_agg1.jpg?raw=true)
+
+All customer columns are unique to *Customer Id* except for *Order Id* so the customer columns can be extracted as a separate *Customer* table.
+
+        
+
+
+
+
+
+
+
+
+
+
 
 
 
