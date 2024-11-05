@@ -152,7 +152,7 @@ Let's do a check for columns that have all the same values.
 
         df_sup.drop(columns=['Benefit per order', 'Sales per customer', 'Product Category Id', 'Order Customer Id', 'Order Item Product Price', 'Order Item Cardprod Id'], inplace=True)
 
-We can also split up the dates for Orders and Shipping into Date format and Time format in case we want to work with date and time format separately.
+We can also split up the dates for orders and shipping into Date format and Time format in case we want to work with date and time format separately.
 
         df_sup['order date (DateOrders)'] = pd.to_datetime(df_sup['order date (DateOrders)'])
         df_sup['Order Date'] = df_sup['order date (DateOrders)'].dt.date
@@ -164,7 +164,7 @@ We can also split up the dates for Orders and Shipping into Date format and Time
 
         df_sup.drop(columns=['order date (DateOrders)', 'shipping date (DateOrders)'], inplace=True)
 
-Now, let's look at how we can build a relational data model based on min and max unique values as a type of normalization technique. For Orders, let's look at the 1st set of columns to see which ones are unique to *Order Id* so they can split out into separate tables.
+Now, let's look at how we can build a relational data model based on min and max unique values as a type of normalization technique. For orders, let's look at the 1st set of columns to see which ones are unique to *Order Id* so they can split out into separate tables.
 
         df_ord1 = df_sup[['Type', 'Days for shipping (real)', 'Days for shipment (scheduled)',
                'Delivery Status', 'Late_delivery_risk', 'Category Id', 'Category Name', 'Customer Name','Customer City', 
@@ -177,7 +177,7 @@ Now, let's look at how we can build a relational data model based on min and max
 
 ![Python_df_ord_agg1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_ord_agg1.jpg?raw=true)
 
-We see that all columns have unique values except the Category columns. This indicates that *Category Id* and *Category Name* can taken out of the *Orders* table.
+We see that all columns have unique values except the category columns. This indicates that *Category Id* and *Category Name* can taken out of the *Orders* table.
 
         df_ord2 = df_sup[['Department Id','Department Name', 'Latitude', 'Longitude', 'Market', 'Order City',
                'Order Country', 'Order Item Discount','Order Item Discount Rate', 'Order Item Id', 
@@ -190,7 +190,7 @@ We see that all columns have unique values except the Category columns. This ind
         
 ![Python_df_ord_agg2.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_ord_agg2.jpg?raw=true)
 
-We see that the Department columns and Order Item columns don't have unique values. These can be taken out of the *Orders* table.
+We see that the department columns and order item columns don't have unique values. These can be taken out of the *Orders* table.
 
         df_ord3 = df_sup[['Order Region', 'Order State', 'Order Status',
                'Product Card Id', 'Product Image', 'Product Name', 'Product Price',
@@ -203,9 +203,9 @@ We see that the Department columns and Order Item columns don't have unique valu
 
 ![Python_df_ord_agg3.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_ord_agg3.jpg?raw=true)
 
-Here the Product columns don't have unique values. These can be taken out of the *Orders* table.
+Here the product columns don't have unique values. These can be taken out of the *Orders* table.
 
-There is a *Customer Id* column which implies a unique Customer record. Let's see if we have multiple orders per customer so that we can create a seperate Dimension table for customers.
+There is a *Customer Id* column which implies a unique customer record. Let's see if we have multiple orders per customer so that we can create a seperate Dimension table for customers.
 
 ![Python_df_cust_agg1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_cust_agg1.jpg?raw=true)
 
