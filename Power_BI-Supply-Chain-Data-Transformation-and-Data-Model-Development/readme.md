@@ -2,7 +2,7 @@
 
 ## Data Cleaning
 
-The first step was to import and clean the *DataCoSupplyChainDataset* data source in the [DataCoSupplyChainDataset csv file](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Files/Global%20Supply%20Chain%20Data%20Mapping.xlsx) using **Power Query**. All columns were checked for errors, missing values, duplicates. I used the *Column quality*, *Column distribution* and *Column profile* to identify where there might be missing values, discrepancies, errors and possible duplicates. Most importantly, I used the **data exploration** and **data cleaning** steps I executed in Python as a reference. 
+The first step was to import and clean the *DataCoSupplyChainDataset* data source file: [DataCoSupplyChainDataset csv file](https://data.mendeley.com/datasets/8gx2fvg2k6/5/files/29dc7b05-dda6-4834-8354-5b5cc44430df/DescriptionDataCoSupplyChain.csv) using **Power Query**. All columns were checked for errors, missing values, duplicates. I used the *Column quality*, *Column distribution* and *Column profile* to identify where there might be missing values, discrepancies, errors and possible duplicates. Most importantly, I used the **data exploration** and **data cleaning** steps I executed in Python as a reference. 
 
 1. All the columns that were identified in Python that were not needed were removed except for *Type*, *Days for shipping (real)*, *Days for shipment (scheduled)*, *Delivery Status*, *Late_delivery_risk*, *Category Id*, 
    *Category Name*, *Customer City*, *Customer Country*, *Customer Fname*, *Customer Id*, *Customer Lname*, *Customer Segment*, *Customer State*, *Customer Street*, *Customer Zipcode*, *Department Id*, *Department Name*, 
