@@ -50,6 +50,12 @@ The largest sales in **2015** and **2017** were in France**. Top **Department** 
 
 ![Power_BI_Supply_Chain_Dashboard_Page_2017.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_2017.jpg?raw=true)
 
+## Global Supply Chain Stacked Bar Charts
+
+The 1st Stacked Bar Chart aggregates *Sales*  from *OrderItems* table by *Customer Segment* in the *Customers* table. We clearly see that most customers were consumers. The 2nd Stacked Bar Chart shows the transactions processed by status using count of *Order Id* and *Transaction Status* from the *Orders* table. More transactions are in progress and not completed.
+
+![Power_BI_Supply_Chain_Dashboard_Page_Stacked_Bar_Charts.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Stacked_Bar_Charts.jpg?raw=true)
+
 
 
 
