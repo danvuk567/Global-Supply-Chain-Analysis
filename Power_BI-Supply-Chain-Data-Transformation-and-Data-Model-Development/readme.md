@@ -174,7 +174,7 @@ I also added another KPI that uses DAX which is called *PercLateTransactions*. T
 
 Lastly, I created a **one-to-many relationship** between *Customer Id* in the *Customers* table to *Customer Id* in the *Orders* table, *Order Id* in the *Orders* table to *Order Id* in the *OrderItems* table, *Product Card Id* in the *OrderItems* table to *Product Card Id* in the *Product* table, *Category Id* in the *Product* table to *Category Id* in the *Category* table, *Department Id* in the *Category* table to *Department Id* in the *Department* table, and *Date* in the *Calendar* table to *Order Date* in the *Orders* table. A one-to-many relationship is also created between *Month No* in the *CalMonth* table to *Month No* in the *Calendar* table.
 
-![Power_BI_Global_Supply_Chain_Data_Model_Relationships.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Global_Supply_Chain_Data_Model_Relationships.jpg?raw=true)
+![Power_BI_Global_Supply_Chain_Data_Model_Relationships.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Global_Supply_Chain_Data_Model_Relationships.jpg?raw=true)
 
 And our final **Snowflake Schema** Data Model that contains 2 Fact tables and a Dimensional hierarchy now looks like this:
 
