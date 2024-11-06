@@ -68,7 +68,7 @@ After removing row duplicates, the *Orders* table has 19 columns:
 
   ![Power_Query_Orders.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Orders.jpg?raw=true)
 
-The *Order Items* table is extracted in Power Query by referencing *Sheet1* and keeping the *Order Id*, *Order Item Discount*, *Order Item Discount Rate*, *Order Item Id*, *Order Item Profit Ratio*, *Order Item Quantity*, *Sales*, *Order Item Total*, *Order Profit Per Order*, and *Product Card Id*.
+The *Order Items* table is extracted in Power Query by referencing *DataCoSupplyChainDataset* and keeping the *Order Id*, *Order Item Discount*, *Order Item Discount Rate*, *Order Item Id*, *Order Item Profit Ratio*, *Order Item Quantity*, *Sales*, *Order Item Total*, *Order Profit Per Order*, and *Product Card Id*.
 
 After removing row duplicates, the *Order Items* table has 10 columns:
 
@@ -92,7 +92,7 @@ After removing row duplicates, the *Category* table has 3 columns:
 
   ![Power_Query_Category.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Category.jpg?raw=true)
 
-The *Product* table is extracted in Power Query by referencing *DataCoSupplyChainDataset* and keeping the *Product Card Id*, *Product Image*, *Product Name*, and *Product Price*.
+The *Product* table is extracted in Power Query by referencing *DataCoSupplyChainDataset* and keeping the *Category Id*, *Product Card Id*, *Product Image*, *Product Name*, and *Product Price*.
 
 After removing row duplicates, the *Product* table has 5 columns:
 
