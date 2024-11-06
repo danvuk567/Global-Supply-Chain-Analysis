@@ -178,4 +178,6 @@ Lastly, I created a **one-to-many relationship** between *Customer Id* in the *C
 
 And our final **Snowflake Schema** Data Model that contains 2 Fact tables and a Dimensional hierarchy now looks like this:
 
-![Power_BI_Final_Global_Supply_Chain_Data_Model.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Final_Global_Supply_Chain_Data_Model.jpg?raw=true)
+![Power_BI_Final_Global_Supply_Chain_Data_Model.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Final_Global_Supply_Chain_Data_Model.jpg?raw=true)
+
+
