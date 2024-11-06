@@ -138,9 +138,9 @@ To provide Month names in visuals that are sorted by *Month No*, I created a *Da
         }
     )
 
-I decided to add a **KPI** that uses DAX which is called *Avg No. of Transactions per Day*. To formulate this, I created a **Measure** called *AvgTransactionsPerDate* which takes the average of the total orders per day.
+I decided to add a **KPI** that uses DAX which is called *Avg No. of Transactions per Day*. To formulate this, I created a **Measure** called *AvgTransactions* which takes the average of the total orders per day.
 
-    AvgTransactionsPerDate = 
+    AvgTransactions = 
     ROUND(AVERAGEX(
         SUMMARIZE(
             Orders,
