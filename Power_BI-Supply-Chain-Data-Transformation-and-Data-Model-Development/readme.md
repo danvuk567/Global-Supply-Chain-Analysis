@@ -52,7 +52,7 @@ The first step was to import and clean the *DataCoSupplyChainDataset* data sourc
 
 The next approach was to identify how the data in *DataCoSupplyChainDataset* could be normalized to separate tables. We used date exploration and transformation steps in Python to develop a **Data Mapping document**. The 2nd tab of the following excel sheet was then used to build the initial data model for the valid columns:
 
-[SuperStore Data Mapping file](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/Power_BI-Sales-Data-Transformation-and-Data-Model-Development/SuperStore%20Data%20Mapping.xlsx)
+[Global Supply Chain Data Mapping file](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Files/Global%20Supply%20Chain%20Data%20Mapping.xlsx)
 
 ![SuperStore Data Mapping](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/SuperStore_Data_Mapping.jpg?raw=true)
 
