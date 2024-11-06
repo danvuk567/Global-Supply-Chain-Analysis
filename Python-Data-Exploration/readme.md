@@ -1,6 +1,6 @@
 # Python Data Exploration
 
-## Exploratory Data Analysis and Data Cleaning: *[data_exploration_analysis.ipynb](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Data-Exploration/data_exploration_analysis.ipynb)*
+## Exploratory Data Analysis, Data Cleaning and Relational Data Modelling: *[data_exploration_analysis.ipynb](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Data-Exploration/data_exploration_analysis.ipynb)*
 
 The 1st step is to load the csv file and take a look at the columns. There are 53 columns so we can split it up into 4 dataframes in order to explore the data for all columns in seperate chunks.
 
@@ -177,7 +177,9 @@ Now, let's look at how we can build a relational data model based on min and max
 
 ![Python_df_ord_agg1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_ord_agg1.jpg?raw=true)
 
-We see that all columns have unique values except the category columns. This indicates that *Category Id* and *Category Name* can taken out of the *Orders* table.
+We see that all columns have unique values except the category columns. This indicates that *Category Id* and *Category Name* can taken out of the *Orders* Fact table.
+
+Now let's look at the next set of columns.
 
         df_ord2 = df_sup[['Department Id','Department Name', 'Latitude', 'Longitude', 'Market', 'Order City',
                'Order Country', 'Order Item Discount','Order Item Discount Rate', 'Order Item Id', 
@@ -187,10 +189,10 @@ We see that all columns have unique values except the category columns. This ind
         ord2_unique_counts = df_ord2.groupby('Order Id').agg(lambda x: x.nunique()).reset_index()
         ord2_min_max_values = ord2_unique_counts.agg(['min', 'max']).reset_index()
         print(ord2_min_max_values)
-        
+    
 ![Python_df_ord_agg2.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_ord_agg2.jpg?raw=true)
 
-We see that the department columns and order item columns don't have unique values. These can be taken out of the *Orders* table.
+We see that the department columns and order item columns don't have unique values. These can be taken out of the *Orders* table and the order items columns can go to the *Order Items* table.
 
         df_ord3 = df_sup[['Order Region', 'Order State', 'Order Status',
                'Product Card Id', 'Product Image', 'Product Name', 'Product Price',
@@ -209,14 +211,63 @@ There is a *Customer Id* column which implies a unique customer record. Let's se
 
 ![Python_df_cust_agg1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_cust_agg1.jpg?raw=true)
 
-All customer columns are unique to *Customer Id* except for *Order Id* so the customer columns can be extracted as a separate *Customer* table.
+All customer columns are unique to *Customer Id* except for *Order Id* so the customer columns can be extracted as a separate *Customers* table.
 
+Now let's look at the *Order Items* table columns to see what is unique to *Order Item Id*.
+
+        df_ord_item = df_sup[['Category Id','Category Name','Department Id','Department Name','Product Card Id','Product Image','Product Name','Product Price','Order Item Id']].copy()
+        df_ord_item.drop_duplicates(inplace=True)
+        ord_item_unique_counts = df_ord_item.groupby('Order Item Id').agg(lambda x: x.nunique()).reset_index()
+        ord_item_min_max_values = ord_item_unique_counts.agg(['min', 'max']).reset_index()
+        print(ord_item_min_max_values)
+
+![Python_df_ord_item_agg1.jpg ](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_ord_item_agg1.jpg?raw=true)
+
+As expected, all columns are unique to *Order Item Id* and this would be the lowest level Fact table.
+
+Now let's look at the relationship between department, category and product columns. With respect to departments, how unique are categories and products?
+
+![Python_df_dept_agg1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_dept_agg1.jpg?raw=true)
+
+All columns are not unique except *Department Name*. Now, let's look at categories.
+
+        df_cat = df_sup[['Category Id', 'Category Name', 'Department Id','Department Name', 'Product Card Id','Product Image','Product Name','Product Price']].copy()
+        df_cat.drop_duplicates(inplace=True)
+        cat_unique_counts = df_cat.groupby(['Category Id']).agg(lambda x: x.nunique()).reset_index()
+        cat_min_max_values = cat_unique_counts.agg(['min', 'max']).reset_index()
+        print(cat_min_max_values)
         
+![Python_df_cat_agg1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_cat_agg1.jpg?raw=true)
 
+Department columns is unique to *Category Id* so we can extract the *Department* Dimension table. Are categories unique to products?
 
+        df_prod = df_sup[['Category Id', 'Category Name', 'Product Card Id','Product Image','Product Name','Product Price']].copy()
+        df_prod.drop_duplicates(inplace=True)
+        prod_unique_counts = df_prod.groupby(['Product Card Id']).agg(lambda x: x.nunique()).reset_index()
+        prod_min_max_values = prod_unique_counts.agg(['min', 'max']).reset_index()
+        print(prod_min_max_values)
 
+![Python_df_prod_agg1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_prod_agg1.jpg?raw=true)
 
+Categories are unique to products based on *Product Card Id* so the *Categories* can be extracted as a Dimension table one level below *Department*. The remaining product columns belong to the *Product* Dimension table one level below *Category*.
 
+For the *Customers* table, we want to ensure that the *Latititude* and *Longitude* are valid geographical coordinates. Are they unique to country, city, state, street and zip code.
+
+        df_loc = df_sup[['Customer City', 'Customer State', 'Customer Country', 'Customer Street', 'Customer Zipcode','Latitude', 'Longitude']].copy()
+        df_loc.drop_duplicates(inplace=True)
+        loc_unique_counts = df_loc.groupby(['Latitude', 'Longitude']).agg(lambda x: x.nunique()).reset_index()
+        loc_min_max_values = loc_unique_counts.agg(['min', 'max']).reset_index()
+        print(loc_min_max_values)
+
+![Python_df_loc_agg1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_loc_agg1.jpg?raw=true)
+
+We see that for each *Latititude* and *Longitude* coordinates, there are multiple country, city, state, street and zipcode combinations. These don't appear to be valid coordinates so we will drop those 2 columnsfrom df_sup.
+
+        df_sup.drop(columns=['Latitude', 'Longitude'], inplace=True)
+
+![Python_df_sup_final_len.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup_final_len.jpg?raw=true)
+
+Our final columns count is 41. We have removed 12 invalid or duplicate columns.         
 
 
 
