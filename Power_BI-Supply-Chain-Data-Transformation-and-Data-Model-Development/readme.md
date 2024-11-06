@@ -12,37 +12,37 @@ The first step was to import and clean the *DataCoSupplyChainDataset* data sourc
 
 4. Created a custom column *Customer Name* as follows:
 
-       Power_Query_Customer_Name.jpg
+       ![Power_Query_Customer_Name.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Customer_Name.jpg?raw=true)
 
        Changed data type to Text, and removed *Customer Fname* and *Customer Lname*.
 
 5. Create a custom conditional column *Zipcode* as follows:
 
-       Power_Query_Zipcode.jpg
+       ![Power_Query_Zipcode.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Zipcode.jpg?raw=true)
 
        Changed data type to Whole Number, Removed *Customer Zipcode*, and renamed *Zipcode* to *Customer Zipcode*.
 
-6. Create a custom conditional column *State* as follows:
+7. Create a custom conditional column *State* as follows:
 
-       Power_Query_State.jpg
+       ![Power_Query_State.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_State.jpg?raw=true)
 
        Changed data type to Text, removed *Customer State*, and renamed *State* to *Customer State*.
 
-7. Create a custom conditional column *City* as follows:
+9. Create a custom conditional column *City* as follows:
 
-       Power_Query_City.jpg
+       ![Power_Query_City.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_City.jpg?raw=true)
 
        Changed data type to Text, removed *Customer City*, and renamed *City* to *Customer City*.
 
-8. Create a custom conditional column *Street* as follows:
+11. Create a custom conditional column *Street* as follows:
 
-       Power_Query_Street.jpg
+       ![Power_Query_Street.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Street.jpg?raw=true)
 
        Changed data type to Text, removed *Customer Street*, and renamed *Street* to *Customer Street*.
 
-9. Split Column *order date (DateOrders)* by Delimeter using space into 2 columns with data types as Date and Time. Renamed columns to *Order Date* and *Order Time*.
+12. Split Column *order date (DateOrders)* by Delimeter using space into 2 columns with data types as Date and Time. Renamed columns to *Order Date* and *Order Time*.
    
-10. Split Column *shipping date (DateOrders)* by Delimeter using space into 2 columns with data types as Date and Time. Renamed columns to *Shipping Date* and *Shipping Time*.
+13. Split Column *shipping date (DateOrders)* by Delimeter using space into 2 columns with data types as Date and Time. Renamed columns to *Shipping Date* and *Shipping Time*.
 
 
 ## Data Mapping
