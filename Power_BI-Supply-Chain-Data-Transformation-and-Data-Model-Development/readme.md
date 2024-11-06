@@ -56,7 +56,7 @@ The next approach was to identify how the data in *DataCoSupplyChainDataset* cou
 
 [Global Supply Chain Data Mapping file](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Files/Global%20Supply%20Chain%20Data%20Mapping.xlsx)
 
-![Global_Supply_Chain_Data_Mapping.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Global_Supply_Chain_Data_Mapping.jpg?raw=true)
+![Global_Supply_Chain_Data_Mapping.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Global_Supply_Chain_Data_Mapping.jpg?raw=true)
 
 ## Data Transformation Steps
 
