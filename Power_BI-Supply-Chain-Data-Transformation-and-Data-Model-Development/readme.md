@@ -151,7 +151,7 @@ I decided to add a **KPI** that uses DAX which is called *Avg No. of Transaction
         [TotalTransactionsbyDate]
     ), 0) // Get the rounded average of calculated total daily transactions
 
-I also added another **KPI** that uses DAX which is called *PercLateTransactions*. To formulate this, I first created a **Measure** called *TotalLateDeliveries* which adds up all *Late Delivery Risk* values. *Late Delivery Risk* is 1 if a delivery is late, and 0 if it is not. And then *PercLateTransactions* is calculated by dividing *TotalLateDeliveries* by the total count of orders.
+I also added another KPI that uses DAX which is called *PercLateTransactions*. To formulate this, I first created a Measure called *TotalLateDeliveries* which adds up all *Late Delivery Risk* values. *Late Delivery Risk* is 1 if a delivery is late, and 0 if it is not. And then *PercLateTransactions* is calculated by dividing *TotalLateDeliveries* by the total count of orders.
 
 
     TotalLateDeliveriesByDate = 
