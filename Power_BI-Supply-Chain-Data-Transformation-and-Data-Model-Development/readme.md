@@ -6,10 +6,10 @@ The first step was to import and clean the *DataCoSupplyChainDataset* data sourc
 
 1. All columns that were identified in Python that were not needed were removed except for the following columns:
 
-   *Type*, *Days for shipping (real)*, *Days for shipment (scheduled)*, *Delivery Status*, *Late_delivery_risk*, *Category Id*, 
-   *Category Name*, *Customer City*, *Customer Country*, *Customer Fname*, *Customer Id*, *Customer Lname*, *Customer Segment*, *Customer State*, *Customer Street*, *Customer Zipcode*, *Department Id*, *Department Name*, 
-   *Market*, *Order City*, *Order Country*, *order date (DateOrders)*, *Order Id*, *Order Item Discount*, *Order Item Discount Rate*, *Order Item Id*, *Order Item Profit Ratio*, *Order Item Quantity*, *Sales*,
-   *Order Item Total*, *Order Profit Per Order*, *Order Region*, *Order State*, *Order Status*, *Product Card Id*, *Product Image*, *Product Name*, *Product Price*, *shipping date (DateOrders)* and *Shipping Mode*.
+   *Type*, *Days for shipping (real)*, *Days for shipment (scheduled)*, *Delivery Status*, *Late_delivery_risk*, *Category Id*, *Category Name*, *Customer City*, *Customer Country*, *Customer Fname*, *Customer Id*, 
+   *Customer Lname*, *Customer Segment*, *Customer State*, *Customer Street*, *Customer Zipcode*, *Department Id*, *Department Name*, *Market*, *Order City*, *Order Country*, *order date (DateOrders)*, *Order Id*,
+   *Order Item Discount*, *Order Item Discount Rate*, *Order Item Id*, *Order Item Profit Ratio*, *Order Item Quantity*, *Sales*, *Order Item Total*, *Order Profit Per Order*, *Order Region*, *Order State*,
+   *Order Status*, *Product Card Id*, *Product Image*, *Product Name*, *Product Price*, *shipping date (DateOrders)* and *Shipping Mode*.
 
 3. Changed data types were needed.
 
@@ -60,21 +60,45 @@ The next approach was to identify how the data in *DataCoSupplyChainDataset* cou
 
 ## Data Transformation Steps
 
-The *Region* table is extracted in Power Query by referencing *Sheet1* and keeping the *Country*, *City*, *State* and *Region* columns. Removed row duplicates and added a unique index column named *Region ID*.
+The *Orders* table is extracted in Power Query by referencing *DataCoSupplyChainDataset* and keeping the *Type*, *Days for shipping (real)*, *Days for shipment (scheduled)*, *Delivery Status*, *Late_delivery_risk*, *Market*, *Order City*, *Order Country*, *Order Date*, *Order Time*, *Order Id*, *Order Region*, *Order State*, *Order Status*, *Shipping Date*, *Shipping Time*, and *Shipping Mode*. Renamed *Days for shipping (real)* to *Actual Shipment Days*, *Days for shipment (scheduled)* to *Scheduled Shipment Days*, and *Late_delivery_risk* to Late Delivery Risk*. For simplicity sake, another custom column that groups *Order Status* into 3 states is created as follows:
 
-![Region Table Transformation.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Region_table_transformation.jpg?raw=true)
+  ![Power_Query_Transaction_Status.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Transaction_Status.jpg?raw=true)
 
-The *Product* table is extracted in Power Query by referencing *Sheet1* and keeping the *Product ID*, *Category*, *Sub-Category* and *Product Name* columns. Removed row duplicates and found *Product ID* duplicates by referencing the *Product* table, doing a group by *Product ID* and checking for count > 1. Found 28 duplicates of *Product ID* which were removed from the *Product* table.
+After removing row duplicates, the *Orders* table has 19 columns:
 
-![Product Table Transformation.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Product_table_transformation.jpg?raw=true)
+  ![Power_Query_Orders.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Orders.jpg?raw=true)
 
-The *Customers* table is extracted in Power Query by referencing *Sheet1* and keeping the *Customer ID*, *Customer Name* and *Segment* columns. Removed row duplicates and checked that there are no duplicates by referencing the *Customers* table, doing a group by Customer ID and checking for count > 1. 
+The *Order Items* table is extracted in Power Query by referencing *Sheet1* and keeping the *Order Id*, *Order Item Discount*, *Order Item Discount Rate*, *Order Item Id*, *Order Item Profit Ratio*, *Order Item Quantity*, *Sales*, *Order Item Total*, *Order Profit Per Order*, and *Product Card Id*.
 
-![Customers Table Transformation.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Customers_table_transformation.jpg?raw=true)
+After removing row duplicates, the *Order Items* table has 10 columns:
 
-The *Sales* table is extracted in Power Query by referencing *Sheet1* and removing the *Customer Name*, *Segment*, *Category*, *Sub-Category* and *Product Name* columns. Merged with the *Region* table by *Country*, *City*, *State* and *Region*. Added *Region ID* from *Region* table and removed the *Country*, *City*, *State* and *Region* columns. Added a unique index column named 'Sales ID'.
+  ![Power_Query_Order_Items.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Order_Items.jpg?raw=true)
 
-![Sales Table Transformation.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Sales_table_transformation.jpg?raw=true)
+The *Customers* table is extracted in Power Query by referencing *DataCoSupplyChainDataset* and keeping the *Customer City*, *Customer Country*, *Customer Name*, *Customer Id*, *Customer Segment*, *Customer State*, *Customer Street*, and *Customer Zipcode*.
+
+After removing row duplicates, the *Customers* table has 8 columns:
+
+  ![Power_Query_Customers.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Customers.jpg?raw=true)
+
+The *Department* table is extracted in Power Query by referencing *DataCoSupplyChainDataset* and keeping the *Department Id*, and *Department Name*.
+
+After removing row duplicates, the *Department* table has 2 columns:
+
+  ![Power_Query_Department.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Department.jpg?raw=true)
+
+The *Category* table is extracted in Power Query by referencing *DataCoSupplyChainDataset* and keeping the *Category Id*, *Category Name*, and *Department Id*.
+
+After removing row duplicates, the *Category* table has 3 columns:
+
+  ![Power_Query_Category.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Category.jpg?raw=true)
+
+The *Product* table is extracted in Power Query by referencing *DataCoSupplyChainDataset* and keeping the *Product Card Id*, *Product Image*, *Product Name*, and *Product Price*.
+
+After removing row duplicates, the *Product* table has 5 columns:
+
+  ![Power_Query_Product.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Product.jpg?raw=true)
+
+  
 
 # DAX Calculated Date Tables
 
