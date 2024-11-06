@@ -68,7 +68,7 @@ After removing row duplicates, the *Orders* table has 19 columns:
 
   ![Power_Query_Orders.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Orders.jpg?raw=true)
 
-The *Order Items* table is extracted in Power Query by referencing *DataCoSupplyChainDataset* and keeping the *Order Id*, *Order Item Discount*, *Order Item Discount Rate*, *Order Item Id*, *Order Item Profit Ratio*, *Order Item Quantity*, *Sales*, *Order Item Total*, *Order Profit Per Order*, and *Product Card Id*.
+The *OrderItems* table is extracted in Power Query by referencing *DataCoSupplyChainDataset* and keeping the *Order Id*, *Order Item Discount*, *Order Item Discount Rate*, *Order Item Id*, *Order Item Profit Ratio*, *Order Item Quantity*, *Sales*, *Order Item Total*, *Order Profit Per Order*, and *Product Card Id*.
 
 After removing row duplicates, the *Order Items* table has 10 columns:
 
@@ -169,14 +169,13 @@ I also added another KPI that uses DAX which is called *PercLateTransactions*. T
     )  // Divide total transactions that are late by total transactions
 
 
-
     
 # Final Data Model 
 
-Lastly, I created relationships a **one-to-many relationship** between *Product_ID* in the *Product* table to *Product_ID* in the *Sales* table, *Region_ID* in the *Region* table to *Region_ID* in the *Sales* table, *Customer_ID* in the *Customers* table to *Customer_ID* in the *Sales* table, and *Date* in the *Calendar* table to *Order Date* in the *Sales* table. A one-to-many relationship is also created between *Month No* in the *CalMonth* table to *Month No* in the *Calendar* table.
+Lastly, I created relationships a **one-to-many relationship** between *Customer Id* in the *Customers* table to *Customer Id* in the *Orders* table, *Order Id* in the *Orders* table to *Order Id* in the *OrderItems* table, *Product Card Id* in the *OrderItems* table to *Product Card Id* in the *Product* table, *Category Id* in the *Product* table to *Category Id* in the *Category* table, *Department Id* in the *Category* table to *Department Id* in the *Department* table, and *Date* in the *Calendar* table to *Order Date* in the *Orders* table. A one-to-many relationship is also created between *Month No* in the *CalMonth* table to *Month No* in the *Calendar* table.
 
-![Power_BI_Sales_Data_Model_Relationships.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Sales_Data_Model_Relationships.jpg?raw=true)
+![Power_BI_Global_Supply_Chain_Data_Model_Relationships.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Global_Supply_Chain_Data_Model_Relationships.jpg?raw=true)
 
-And our final **Star Schema** Data Model now looks like this:
+And our final **Snowflake Schema** Data Model that contains 2 Fact tables and a Dimensional hierarchy now looks like this:
 
-![Power_BI_Final_Sales_Data_Model.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Final_Sales_Data_Model.jpg?raw=true)
+![Power_BI_Final_Global_Supply_Chain_Data_Model.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Final_Global_Supply_Chain_Data_Model.jpg?raw=true)
