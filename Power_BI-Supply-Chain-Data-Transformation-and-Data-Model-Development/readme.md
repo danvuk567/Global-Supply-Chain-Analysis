@@ -4,7 +4,9 @@
 
 The first step was to import and clean the *DataCoSupplyChainDataset* data source: [Global Supply Chain csv file](https://data.mendeley.com/datasets/8gx2fvg2k6/5/files/72784be5-36d3-44fe-b75d-0edbf1999f65/DataCoSupplyChainDataset.csv) using **Power Query**. All columns were checked for errors, missing values, duplicates. I used the *Column quality*, *Column distribution* and *Column profile* to identify where there might be missing values, discrepancies, errors and possible duplicates. Most importantly, I used the **data exploration** and **data cleaning** steps I executed in Python as a reference. 
 
-1. All the columns that were identified in Python that were not needed were removed except for *Type*, *Days for shipping (real)*, *Days for shipment (scheduled)*, *Delivery Status*, *Late_delivery_risk*, *Category Id*, 
+1. All columns that were identified in Python that were not needed were removed except for the following columns:
+
+   *Type*, *Days for shipping (real)*, *Days for shipment (scheduled)*, *Delivery Status*, *Late_delivery_risk*, *Category Id*, 
    *Category Name*, *Customer City*, *Customer Country*, *Customer Fname*, *Customer Id*, *Customer Lname*, *Customer Segment*, *Customer State*, *Customer Street*, *Customer Zipcode*, *Department Id*, *Department Name*, 
    *Market*, *Order City*, *Order Country*, *order date (DateOrders)*, *Order Id*, *Order Item Discount*, *Order Item Discount Rate*, *Order Item Id*, *Order Item Profit Ratio*, *Order Item Quantity*, *Sales*,
    *Order Item Total*, *Order Profit Per Order*, *Order Region*, *Order State*, *Order Status*, *Product Card Id*, *Product Image*, *Product Name*, *Product Price*, *shipping date (DateOrders)* and *Shipping Mode*.
