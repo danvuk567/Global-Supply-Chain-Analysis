@@ -102,11 +102,11 @@ After removing row duplicates, the *Product* table has 5 columns:
 
 # DAX Calculated Date Tables
 
-For dates, I created the **calculated table** called *Calendar* using **DAX** using the min and max dates from *Order Date* in the *Sales* table. We define the columns *Date*, *Year*, *Quarter*, *Month No* and *Day* with the following DAX code:
+For dates, I created the **calculated table** called *Calendar* using **DAX** using the min and max dates from *Order Date* in the *Orders* table. We define the columns *Date*, *Year*, *Quarter*, *Month No* and *Day* with the following DAX code:
 
     Calendar = 
-      VAR StartDate = MIN(Sales[Order Date])
-      VAR EndDate = MAX(Sales[Order Date])
+      VAR StartDate = MIN(Orders[Order Date])
+      VAR EndDate = MAX(Orders[Order Date])
 
     RETURN
         ADDCOLUMNS(
@@ -139,10 +139,38 @@ To provide Month names in visuals that are sorted by *Month No*, I created a *Da
         }
     )
 
-One of the **KPIs** in Dashboard looks at average delivery days. To formulate that, I create a calculated column using DAX called *DaystoDelivery* in the *Sales* table by subtracting the number of days between *Order Date* and *Ship Date*.
+I decided to add a **KPI** that uses DAX which is called *Avg No. of Transactions per Day*. To formulate this, I created a **Measure** called *AvgTransactionsPerDate* which takes the average of the total orders per day.
 
-        DaystoDelivery = DATEDIFF(Sales[Order Date],Sales[Ship Date], DAY)
+    AvgTransactionsPerDate = 
+    ROUND(AVERAGEX(
+        SUMMARIZE(
+            Orders,
+            Orders[Order Date],
+            "TotalTransactionsbyDate", COUNTROWS(Orders)  // Counting transactions per date
+        ), // USe SUMMARIZE to group by Order Date in Orders table, count all transactions using COUNTROWS and label as "TotalTransactionsbyDate"
+        [TotalTransactionsbyDate]
+    ), 0) // Get the rounded average of calculated total daily transactions
 
+I also added another **KPI** that uses DAX which is called *PercLateTransactions*. To formulate this, I first created a **Measure** called *TotalLateDeliveries* which adds up all *Late Delivery Risk* values. *Late Delivery Risk* is 1 if a delivery is late, and 0 if it is not. And then *PercLateTransactions* is calculated by dividing *TotalLateDeliveries* by the total count of orders.
+
+
+    TotalLateDeliveriesByDate = 
+    CALCULATE(
+        SUM(Orders[Late Delivery Risk])
+    )
+
+    PercLateTransactions = 
+    DIVIDE(
+        [TotalLateDeliveries],
+        CALCULATE(
+            COUNTROWS(Orders)
+        ), // Use CALCULATE since we consider whole Orders table and no grouping column, count all transactions using COUNTROWS
+        0
+    )  // Divide total transactions that are late by total transactions
+
+
+
+    
 # Final Data Model 
 
 Lastly, I created relationships a **one-to-many relationship** between *Product_ID* in the *Product* table to *Product_ID* in the *Sales* table, *Region_ID* in the *Region* table to *Region_ID* in the *Sales* table, *Customer_ID* in the *Customers* table to *Customer_ID* in the *Sales* table, and *Date* in the *Calendar* table to *Order Date* in the *Sales* table. A one-to-many relationship is also created between *Month No* in the *CalMonth* table to *Month No* in the *Calendar* table.
