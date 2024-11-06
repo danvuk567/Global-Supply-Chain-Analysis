@@ -2,7 +2,48 @@
 
 ## Data Cleaning
 
-The first step was to import and clean the *Sheet1* data source in the [SuperStore Data Set Excel file](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/Data-Source-Files/SuperStore%20Sales%20DataSet.xlsx) using **Power Query**. All columns were checked for errors, missing values, duplicates. I used the *Column quality*, *Column distribution* and *Column profile* to identify where there might be missing values, discrepancies, errors and possible duplicates. The *Returns* column had errors which were replaced with 0's and data type changed to *Whole Number*. The last 2 columns *ind1* and *ind2* had null values and were removed. The *Sheet1* data source is disabled from being loaded. 
+The first step was to import and clean the *DataCoSupplyChainDataset* data source in the [SuperStore Data Set Excel file](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/Data-Source-Files/SuperStore%20Sales%20DataSet.xlsx) using **Power Query**. All columns were checked for errors, missing values, duplicates. I used the *Column quality*, *Column distribution* and *Column profile* to identify where there might be missing values, discrepancies, errors and possible duplicates. Most importantly, I used the **data exploration** and **data cleaning** steps I executed in Python as a reference. 
+
+1. All the columns that were identified in Python that were not needed were removed except for *Type*, *Days for shipping (real)*, *Days for shipment (scheduled)*, *Delivery Status*, *Late_delivery_risk*, *Category Id*, *Category Name*, *Customer City*, *Customer Country*, *Customer Fname*, *Customer Id*, *Customer Lname*, *Customer Segment*, *Customer State*, *Customer Street*, *Customer Zipcode*, *Department Id*, *Department Name*, *Market*, *Order City*, *Order Country*, *order date (DateOrders)*, *Order Id*, *Order Item Discount*, *Order Item Discount Rate*, *Order Item Id*, *Order Item Profit Ratio*, *Order Item Quantity*, *Sales*, *Order Item Total*, *Order Profit Per Order*, *Order Region*, *Order State*, *Order Status*, *Product Card Id*, *Product Image*, *Product Name*, *Product Price*, *shipping date (DateOrders)* and *Shipping Mode*.
+
+2. Changed data types were needed.
+
+3. Nulls in *Customer Lname* column were replaced with blanks.
+
+4. Created a custom column *Customer Name* as follows:
+
+       Power_Query_Customer_Name.jpg
+
+       Changed data type to Text, and removed *Customer Fname* and *Customer Lname*.
+
+5. Create a custom conditional column *Zipcode* as follows:
+
+       Power_Query_Zipcode.jpg
+
+       Changed data type to Whole Number, Removed *Customer Zipcode*, and renamed *Zipcode* to *Customer Zipcode*.
+
+6. Create a custom conditional column *State* as follows:
+
+       Power_Query_State.jpg
+
+       Changed data type to Text, removed *Customer State*, and renamed *State* to *Customer State*.
+
+7. Create a custom conditional column *City* as follows:
+
+       Power_Query_City.jpg
+
+       Changed data type to Text, removed *Customer City*, and renamed *City* to *Customer City*.
+
+8. Create a custom conditional column *Street* as follows:
+
+       Power_Query_Street.jpg
+
+       Changed data type to Text, removed *Customer Street*, and renamed *Street* to *Customer Street*.
+
+9. Split Column *order date (DateOrders)* by Delimeter using space into 2 columns with data types as Date and Time. Renamed columns to *Order Date* and *Order Time*.
+   
+10. Split Column *shipping date (DateOrders)* by Delimeter using space into 2 columns with data types as Date and Time. Renamed columns to *Shipping Date* and *Shipping Time*.
+
 
 ## Data Mapping
 
