@@ -26,7 +26,7 @@ The Donut Chart represents 5 global markets and uses *Sales* from *OrderItems* t
 
 ![Power_BI_Supply_Chain_Dashboard_Page_Donut_Chart.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Donut_Chart.jpg?raw=true)
 
-## Global Supply Chain Drill Down Sales Clustered Bar Chart
+## Global Supply Chain Drill-Down Sales Clustered Bar Chart
 
 This Clustered Bar Chart has the ability to drill down in sales by deparment, category, and product by using *Department Name* from the *Department* table, *Category Name* from the *Category* table, *Product Name* from the *Product* table, and *Sales* from the *OrderItems* table. Top Selling **Department** in **2015** to **2017** is **Fan Shop**, 2nd is **Apparel**. Drilling down to **Category**, we have **Fishing** 1st and **Cleats** 2nd. And drilling down to Product, we have other specific products that are quite descriptive but unclear and product image URLs were not displaying anything.
 
@@ -39,3 +39,17 @@ Drilling down to **Category**, we have **Fishing** 1st and **Cleats** 2nd.
 And drilling down to **Product**, we have other specific products that are quite descriptive but unclear and product image URLs were not displaying anything.
 
 ![Power_BI_Supply_Chain_Dashboard_Page_Clustered_Bar_Chart_Product.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Clustered_Bar_Chart_Product.jpg?raw=true)
+
+## Global Supply Chain Sales by Country Map Visual
+
+This map visual uses *Order Country* from the *Orders* table and *Sales* from the *OrderItems* table.
+
+![Power_BI_Supply_Chain_Dashboard_Page_Map_Visual.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Map_Visual.jpg?raw=true)
+
+The largest sales in **2015** and **2017** were in France**. Top **Department** sales were in **Fan Shop**. Drilling down in Fan Shop, top **Category** is **Fishing**, 2nd is **Camping & Hiking** in both years. 
+
+![Power_BI_Supply_Chain_Dashboard_Page_2017.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_2017.jpg?raw=true)
+
+
+
+
