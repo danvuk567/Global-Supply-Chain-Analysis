@@ -99,8 +99,7 @@ After removing row duplicates, the *Product* table has 5 columns:
   ![Power_Query_Product.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Product.jpg?raw=true)
 
   
-
-# DAX Calculated Date Tables
+# DAX Calculated Tables and Measures
 
 For dates, I created the **calculated table** called *Calendar* using **DAX** using the min and max dates from *Order Date* in the *Orders* table. We define the columns *Date*, *Year*, *Quarter*, *Month No* and *Day* with the following DAX code:
 
