@@ -31,3 +31,11 @@ The Donut Chart represents 5 global markets and uses *Sales* from *OrderItems* t
 This Clustered Bar Chart has the ability to drill down in sales by deparment, category, and product by using *Department Name* from the *Department* table, *Category Name* from the *Category* table, *Product Name* from the *Product* table, and *Sales* from the *OrderItems* table. Top Selling **Department** in **2015** to **2017** is **Fan Shop**, 2nd is **Apparel**. Drilling down to **Category**, we have **Fishing** 1st and **Cleats** 2nd. And drilling down to Product, we have other specific products that are quite descriptive but unclear and product image URLs were not displaying anything.
 
 ![Power_BI_Supply_Chain_Dashboard_Page_Clustered_Bar_Chart_Dept.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Clustered_Bar_Chart_Dept.jpg?raw=true)
+
+Drilling down to **Category**, we have **Fishing** 1st and **Cleats** 2nd.
+
+![Power_BI_Supply_Chain_Dashboard_Page_Clustered_Bar_Chart_Category.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Clustered_Bar_Chart_Category.jpg?raw=true)
+
+And drilling down to **Product**, we have other specific products that are quite descriptive but unclear and product image URLs were not displaying anything.
+
+![Power_BI_Supply_Chain_Dashboard_Page_Clustered_Bar_Chart_Product.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Clustered_Bar_Chart_Product.jpg?raw=true)
