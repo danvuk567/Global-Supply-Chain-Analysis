@@ -20,9 +20,12 @@ When slicing data by Year, Total Sales, Total Profit and Total Items Sold has be
 **2017**
 ![Power_BI_Supply_Chain_Dashboard_Page_KPI_Cards_2017.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_KPI_Cards_2017.jpg?raw=true)
 
-## Global Supply Chain Market Donut Chart
+## Global Supply Chain Market Sales Donut Chart
 
 This Donut Chart represents 5 global markets and uses *Sales* from *OrderItems* table and *Market* from *Orders* table.
 
 ![Power_BI_Supply_Chain_Dashboard_Page_Donut_Chart.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Donut_Chart.jpg?raw=true)
 
+## Global Supply Chain Sales Clustered Bar Chart
+
+![Power_BI_Supply_Chain_Dashboard_Page_Clustered_Bar_Chart.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Clustered_Bar_Chart.jpg?raw=true)
