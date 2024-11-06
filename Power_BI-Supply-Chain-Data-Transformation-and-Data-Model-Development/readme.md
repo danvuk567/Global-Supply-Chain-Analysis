@@ -12,9 +12,9 @@ The first step was to import and clean the *DataCoSupplyChainDataset* data sourc
 
 4. Created a custom column *Customer Name* as follows:
 
-       ![Power_Query_Customer_Name.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Customer_Name.jpg?raw=true)
+   ![Power_Query_Customer_Name.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Customer_Name.jpg?raw=true)
 
-       Changed data type to Text, and removed *Customer Fname* and *Customer Lname*.
+   Changed data type to Text, and removed *Customer Fname* and *Customer Lname*.
 
 5. Create a custom conditional column *Zipcode* as follows:
 
