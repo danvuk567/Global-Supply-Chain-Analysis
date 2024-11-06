@@ -50,7 +50,7 @@ The first step was to import and clean the *DataCoSupplyChainDataset* data sourc
 
 ## Data Mapping
 
-The next approach was to identify how the data in *Sheet1* could be normalized to separate tables. Generally, we see that we have orders, customers, products, locations and sales. Customers, products and locations are essentially unique entities and can be extracted from the data as 3 separate Dimension tables. However the *Order ID* was not unique and *Order Date*, *Ship Date*, *Product ID* and *Sales* all had different variations which essentially dictated that orders could not be separated from sales. The *Row ID+O6G3A1:R6* column is also not unique and connot be used as a unique Order key or Sales key. This observation was made by using the *Group By* feature in Power Query to count > 1 for any combination of these columns. The following **Data Mapping document** was then used to build the initial data model for the valid columns:
+The next approach was to identify how the data in *DataCoSupplyChainDataset* could be normalized to separate tables. The following **Data Mapping document** was then used to build the initial data model for the valid columns:
 
 [SuperStore Data Mapping file](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/Power_BI-Sales-Data-Transformation-and-Data-Model-Development/SuperStore%20Data%20Mapping.xlsx)
 
