@@ -8,11 +8,11 @@ This is a project I found on Kaggle with the following link: [DataCo SMART SUPPL
 
 ## **Highlights** ##
 
-* Total sales, total profit andt otal items sold has been on a slight decline from 2015 to 2017.
+* Total sales, total profit andt total items sold has been on a slight decline from 2015 to 2017.
 * Average sales transactions per day went up in 2017.
 * More than half of deliveries are late in all 3 years.
-* The top selling dept in 2015 and 2017 is *Fan Shop*, 2nd is *Apparel*.
-* The top selling category in 2015 and 2017 is *Fishing*, 2nd is *Cleats*.
+* The top selling product department in 2015 and 2017 is *Fan Shop*, 2nd is *Apparel*.
+* The top selling product category in 2015 and 2017 is *Fishing*, 2nd is *Cleats*.
 * Most customer types were consumers vs. corporate or home office.
 * Each year, most sales transactions are in progress and not completed.
 * Late deliveries did not have a greater impact on completed sales transactions.
@@ -26,7 +26,8 @@ This is a project I found on Kaggle with the following link: [DataCo SMART SUPPL
 - [Forecasting Page Visuals](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Forecasting-Page-Visuals/readme.md)
 
 ## **Data Sources Used** ##
-- [SuperStore Data Set Excel file](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/Data-Source-Files/SuperStore%20Sales%20DataSet.xlsx)
+
+- [Global Supply Chain csv file](https://data.mendeley.com/datasets/8gx2fvg2k6/5/files/72784be5-36d3-44fe-b75d-0edbf1999f65/DataCoSupplyChainDataset.csv)
   
 ## **Technologies** ##
 
