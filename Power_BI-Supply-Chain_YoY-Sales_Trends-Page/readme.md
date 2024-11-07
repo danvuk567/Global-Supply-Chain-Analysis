@@ -8,5 +8,8 @@ The purpose of these charts were to dig into what locations and/or order volume 
 
 Looking into China for 2017, we can see that there was a decrease in total sales while total profits, total transactions, and total items sold were increasing. This indicates that more of less expensive products and/or more products were purchased at a discounted price throughout the year at a rate that increased profit. 
 
+![Power_BI_Supply_Chain_Year_over_Year_Sales_Trends_Page.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Year_over_Year_Sales_Trends_Page.jpg?raw=true)
 
 For Australia in 2017, there was a decrease in both total sales and total profits while total transactions, and total items sold were increasing. This indicates that more of less expensive products and/or more products heavily discounted throughout the year creating more losses. 
+
+![Power_BI_Supply_Chain_Year_over_Year_Sales_Trends_Page_Australia_2017.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Year_over_Year_Sales_Trends_Page_Australia_2017.jpg?raw=true)
