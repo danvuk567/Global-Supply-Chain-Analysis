@@ -1,6 +1,6 @@
 # Global Supply Chain Analysis
 
-![Sales Profit Trend Chart](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/sales_proftit_trend.jpg?raw=true)
+![Sales Profit Trend Chart](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Global_Supply_Chain.jpg?raw=true)
 
 ## **Objective** ##
 
