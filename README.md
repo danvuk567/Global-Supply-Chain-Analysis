@@ -4,7 +4,7 @@
 
 ## **Objective** ##
 
-This is a project I found on Kaggle with the following link: [DataCo SMART SUPPLY CHAIN FOR BIG DATA ANALYSIS Project](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis). The goal is to analyze supply chain **Big Data** to identify order-to-delivery time, sales performance and transaction processing inefficiencies. Exploratory data analysis, data cleaning and data modelling techniques were explored using Python. Transformations were done in Power BI Power Query to clean and normalize the data into Dimension and Fact tables. Interactive visualizations were created in Power BI to display various sales and orders KPIs, product sales performance and sales transaction trends.
+This is a project I found on Kaggle with the following link: [DataCo SMART SUPPLY CHAIN FOR BIG DATA ANALYSIS Project](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis). The goal is to analyze supply chain big data to identify order-to-delivery time, sales performance and transaction processing inefficiencies. Exploratory data analysis, data cleaning and data modelling techniques were explored using Python. Transformations were done in Power BI Power Query to clean and normalize the data into Dimension and Fact tables. Interactive visualizations were created in Power BI to display various sales and orders KPIs, product sales performance and sales transaction trends.
 
 ## **Highlights** ##
 
