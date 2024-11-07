@@ -22,13 +22,13 @@ When slicing data by Year, Total Sales, Total Profit and Total Items Sold has be
 
 ## Global Supply Chain Market Sales Donut Chart
 
-The Donut Chart represents 5 global markets and uses *Sales* from *OrderItems* table and *Market* from *Orders* table.
+The Donut Chart represents 5 global markets with total *Sales* from *OrderItems* table by *Market* from *Orders* table.
 
 ![Power_BI_Supply_Chain_Dashboard_Page_Donut_Chart.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Donut_Chart.jpg?raw=true)
 
 ## Global Supply Chain Drill-Down Sales Clustered Bar Chart
 
-This Clustered Bar Chart has the ability to drill down in sales by deparment, category, and product by using *Department Name* from the *Department* table, *Category Name* from the *Category* table, *Product Name* from the *Product* table, and *Sales* from the *OrderItems* table. Top Selling **Department** in **2015** to **2017** is **Fan Shop**, 2nd is **Apparel**. Drilling down to **Category**, we have **Fishing** 1st and **Cleats** 2nd. And drilling down to Product, we have other specific products that are quite descriptive but unclear and product image URLs were not displaying anything.
+This Clustered Bar Chart has the ability to drill down in total sales by deparment, category, and product by using *Department Name* from the *Department* table, *Category Name* from the *Category* table, *Product Name* from the *Product* table, and *Sales* from the *OrderItems* table. Top Selling **Department** in **2015** to **2017** is **Fan Shop**, 2nd is **Apparel**. Drilling down to **Category**, we have **Fishing** 1st and **Cleats** 2nd. And drilling down to Product, we have other specific products that are quite descriptive but unclear and product image URLs were not displaying anything.
 
 ![Power_BI_Supply_Chain_Dashboard_Page_Clustered_Bar_Chart_Dept.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Clustered_Bar_Chart_Dept.jpg?raw=true)
 
@@ -42,7 +42,7 @@ And drilling down to **Product**, we have other specific products that are quite
 
 ## Global Supply Chain Sales by Country Map Visual
 
-This map visual uses *Order Country* from the *Orders* table and *Sales* from the *OrderItems* table.
+This map visual aggregates *Sales* from the *OrderItems* table by *Order Country* from the *Orders* table.
 
 ![Power_BI_Supply_Chain_Dashboard_Page_Map_Visual.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Map_Visual.jpg?raw=true)
 
@@ -52,13 +52,13 @@ The largest sales in **2015** and **2017** were in France**. Top **Department** 
 
 ## Global Supply Chain Stacked Bar Charts
 
-The 1st Stacked Bar Chart aggregates *Sales*  from *OrderItems* table by *Customer Segment* in the *Customers* table. We clearly see that most customers were consumers. The 2nd Stacked Bar Chart shows the transactions processed by status using count of *Order Id* and *Transaction Status* from the *Orders* table. More transactions are in progress and not completed.
+The 1st Stacked Bar Chart aggregates *Sales* from *OrderItems* table by *Customer Segment* in the *Customers* table. We clearly see that most customers were consumers. The 2nd Stacked Bar Chart shows the transactions processed by status by applying the count of *Order Id* by *Transaction Status* from the *Orders* table. More transactions are in progress and not completed.
 
 ![Power_BI_Supply_Chain_Dashboard_Page_Stacked_Bar_Charts.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Stacked_Bar_Charts.jpg?raw=true)
 
 ## Global Supply Chain Clustered Column Chart
 
-This chart compares the total sales transactions processed by shipping status that were either cancelled, completed or in progress. The goal was to see if the type of shipment status had any influence on getting transactions completed faster, slower or being cancelled. In observing the chart, late delivery did not cause cancellations and there were more transaction that were in progress than completed. Relatively speaking, the ratio of in progress to completed transactions for late deliveries as opposed to advance shipping or shipping on time were about the same.
+This Clustered Column Chart applies the count of *Order Id* by *Delivery Status* for each *Transaction Status* in the *Orders* table. The chart compares the total sales transactions processed by shipping status that were either cancelled, completed or in progress. The count of *Order Id*, *Delivery Status*, and *Transaction The goal was to see if the type of shipment status had any influence on getting transactions completed faster, slower or being cancelled. In observing the chart, late delivery did not cause cancellations and there were more transaction that were in progress than completed. Relatively speaking, the ratio of in progress to completed transactions for late deliveries as opposed to advance shipping or shipping on time were about the same.
 
 ![Power_BI_Supply_Chain_Dashboard_Page_Clustered_Column_Chart.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Clustered_Column_Chart.jpg?raw=true)
 
