@@ -46,7 +46,7 @@ This map visual aggregates *Sales* from the *OrderItems* table by *Order Country
 
 ![Power_BI_Supply_Chain_Dashboard_Page_Map_Visual.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Map_Visual.jpg?raw=true)
 
-The largest sales in **2015** and **2017** were in France**. Top **Department** sales were in **Fan Shop**. Drilling down in Fan Shop, top **Category** is **Fishing**, 2nd is **Camping & Hiking** in both years. 
+The largest sales in **2015** and **2017** were in **France**. Top **Department** sales were in **Fan Shop**. Drilling down in Fan Shop, top **Category** is **Fishing**, 2nd is **Camping & Hiking** in both years. 
 
 ![Power_BI_Supply_Chain_Dashboard_Page_2017.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_2017.jpg?raw=true)
 
