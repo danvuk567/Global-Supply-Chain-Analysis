@@ -4,12 +4,7 @@
 
 ## **Objective** ##
 
-This is a project I found on Kaggle with the following link: [DataCo SMART SUPPLY CHAIN FOR BIG DATA ANALYSIS Project](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis). The goal is to develop a predictive sales forecasting model using historical sales data. Transformations were done in Power BI Power Query to clean and normalize the data into Dimension and Fact tables. Interactive visualizations were created to display various sales KPI's, sales revenue comparison and forecasted sales trends.
-
-
-The goal was to develop a dashboard and 
-Transformations were done in Power BI Power Query to clean and normalize the data into Dimension and Fact tables. Interactive visualizations were created to display various sales KPI's, 
-sales revenue comparison and forecasted sales trends.
+This is a project I found on Kaggle with the following link: [DataCo SMART SUPPLY CHAIN FOR BIG DATA ANALYSIS Project](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis). The goal is to analyze supply chain big data to identify order-to-delivery time, sales performance and transaction processing inefficiencies. Transformations were done in Power BI Power Query to clean and normalize the data into Dimension and Fact tables. Interactive visualizations were created to display various sales and orders KPI's, product sales performance and sales transaction trends.
 
 ## **Highlights** ##
 
