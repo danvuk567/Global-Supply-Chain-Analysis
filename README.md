@@ -8,12 +8,16 @@ This is a project I found on Kaggle with the following link: [DataCo SMART SUPPL
 
 ## **Highlights** ##
 
-* Overall, Superstore is a profitable business with 11% profit by the end of 2020.
-* Although sales revenue has increased each month in 2020 compared to prior year, October and December of 2020 have shown significant decrease in profit compared to 2019. This is more prevelant in the Central region of the US.
-* California had the largest sales revenue at $0.34M. However, Texas had the 3rd largest sales revenue of $116K with the highest loss in profits of -$14K. This US state appears to have costs associated with the products sold that are higher than most states which is of great concern.
-* Approximately half (48%) of the sales were to Consumers by the end of 2020.
-* A large portion (43%) of the sales had COD payment method by the end of 2020.
-* Sales are predicted to increase from $2.8K to around $5.3K within the next 15 days. With 95% confidence, there is a possiblity of dropping down to $1K but also possibly increasing up to $9.5K.
+* Total sales, total profit andt otal items sold has been on a slight decline from 2015 to 2017.
+* Average sales transactions per day went up in 2017.
+* More than half of deliveries are late in all 3 years.
+* The top selling dept in 2015 and 2017 is *Fan Shop*, 2nd is *Apparel*.
+* The top selling category in 2015 and 2017 is *Fishing*, 2nd is *Cleats*.
+* Most customer types were consumers vs. corporate or home office.
+* Each year, most sales transactions are in progress and not completed.
+* Late deliveries did not have a greater impact on completed sales transactions.
+* Since September of 2017, total sales transactions have been increased while total items sold have decreased dramatically.
+  This indicates that less items are being purchased more frequently towards the end of 2017.
 
 ## **Table of Contents** ##
 
