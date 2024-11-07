@@ -21,9 +21,10 @@ This is a project I found on Kaggle with the following link: [DataCo SMART SUPPL
 
 ## **Table of Contents** ##
 
-- [Data Transformation and Data Model Development](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Power_BI-Sales-Data-Transformation-and-Data-Model-Development/readme.md)
-- [Dashboard Page Visuals](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Power_BI-Dashboard-Page-Visuals/readme.md)
-- [Forecasting Page Visuals](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Forecasting-Page-Visuals/readme.md)
+- [Python Exploratory Data Analysis](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Supply-Chain-Data-Exploration/readme.md))
+- [Power BI Data Transformation and Data Model Development](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Supply-Chain-Data-Exploration/readme.md))
+- [Power BI Dashboard Page Visuals](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Power_BI-Dashboard-Page-Visuals/readme.md)
+- [Power BI Year-over-Year Sales Trends Page Visuals](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Forecasting-Page-Visuals/readme.md)
 
 ## **Data Sources Used** ##
 
