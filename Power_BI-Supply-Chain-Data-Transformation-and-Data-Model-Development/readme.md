@@ -19,7 +19,7 @@ The first step was to import and clean the *DataCoSupplyChainDataset* data sourc
 
    ![Power_Query_Customer_Name.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Customer_Name.jpg?raw=true)
 
-   Changed data type to Text, and removed *Customer Fname* and *Customer Lname*.
+   Changed data type to Text and removed *Customer Fname* and *Customer Lname*.
 
 6. Create a custom conditional column *Zipcode* as follows:
 
@@ -45,9 +45,9 @@ The first step was to import and clean the *DataCoSupplyChainDataset* data sourc
 
    Changed data type to Text, removed *Customer Street*, and renamed *Street* to *Customer Street*.
 
-10. Split Column *order date (DateOrders)* by Delimeter using space into 2 columns with data types as Date and Time. Renamed columns to *Order Date* and *Order Time*.
+10. Split Column *order date (DateOrders)* by Delimiter using space into 2 columns with data types as Date and Time. Renamed columns to *Order Date* and *Order Time*.
    
-11. Split Column *shipping date (DateOrders)* by Delimeter using space into 2 columns with data types as Date and Time. Renamed columns to *Shipping Date* and *Shipping Time*.
+11. Split Column *shipping date (DateOrders)* by Delimiter using space into 2 columns with data types as Date and Time. Renamed columns to *Shipping Date* and *Shipping Time*.
 
 
 ## Data Mapping
@@ -60,7 +60,7 @@ The next approach was to identify how the data in *DataCoSupplyChainDataset* cou
 
 ## Data Transformation Steps
 
-The *Orders* table is extracted in Power Query by referencing *DataCoSupplyChainDataset* and keeping the *Type*, *Days for shipping (real)*, *Days for shipment (scheduled)*, *Delivery Status*, *Late_delivery_risk*, *Market*, *Order City*, *Order Country*, *Order Date*, *Order Time*, *Order Id*, *Order Region*, *Order State*, *Order Status*, *Shipping Date*, *Shipping Time*, and *Shipping Mode*. Renamed *Days for shipping (real)* to *Actual Shipment Days*, *Days for shipment (scheduled)* to *Scheduled Shipment Days*, and *Late_delivery_risk* to Late Delivery Risk*. For simplicity sake, another custom column that groups *Order Status* into 3 states is created as follows:
+The *Orders* table is extracted in Power Query by referencing *DataCoSupplyChainDataset* and keeping the *Type*, *Days for shipping (real)*, *Days for shipment (scheduled)*, *Delivery Status*, *Late_delivery_risk*, *Market*, *Order City*, *Order Country*, *Order Date*, *Order Time*, *Order Id*, *Order Region*, *Order State*, *Order Status*, *Shipping Date*, *Shipping Time*, and *Shipping Mode*. Renamed *Days for shipping (real)* to *Actual Shipment Days*, *Days for shipment (scheduled)* to *Scheduled Shipment Days*, and *Late_delivery_risk* to Late Delivery Risk*. For simplicity’s sake, another custom column that groups *Order Status* into 3 states is created as follows:
 
   ![Power_Query_Transaction_Status.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_Query_Transaction_Status.jpg?raw=true)
 
