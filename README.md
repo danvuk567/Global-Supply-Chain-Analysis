@@ -4,7 +4,7 @@
 
 ## **Objective** ##
 
-This is a Power BI project I found on DataQuest with the following link: [DataQuest Power BI Sales Forecasting Project](https://www.dataquest.io/blog/power-bi-projects/#project5). The goal is to develop a predictive sales forecasting model using historical sales data. 
+This is a Power BI project I found on DataQuest with the following link: [DataQuest Power BI Global Supply Chain Project](https://www.dataquest.io/blog/power-bi-projects/#project10). The goal is to develop a predictive sales forecasting model using historical sales data. 
 Transformations were done in Power BI Power Query to clean and normalize the data into Dimension and Fact tables. Interactive visualizations were created to display various sales KPI's, 
 sales revenue comparison and forecasted sales trends.
 
