@@ -56,6 +56,11 @@ The 1st Stacked Bar Chart aggregates *Sales*  from *OrderItems* table by *Custom
 
 ![Power_BI_Supply_Chain_Dashboard_Page_Stacked_Bar_Charts.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Stacked_Bar_Charts.jpg?raw=true)
 
+## Global Supply Chain Clustered Column Chart
+
+This chart compares the total sales transactions processed by shipping status that were either cancelled, completed or in progress. The goal was to see if the type of shipment status had any influence on getting transactions completed faster, slower or being cancelled. In observing the chart, late delivery did not cause cancellations and there were more transaction that were in progress than completed. Relatively speaking, the ratio of in progress to completed transactions for late deliveries as opposed to advance shipping or shipping on time were about the same.
+
+![Power_BI_Supply_Chain_Dashboard_Page_Clustered_Column_Chart.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Clustered_Column_Chart.jpg?raw=true)
 
 
 
