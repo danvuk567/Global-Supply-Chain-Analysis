@@ -24,7 +24,7 @@ This is a project I found on Kaggle with the following link: [DataCo SMART SUPPL
 - [Python Exploratory Data Analysis](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Supply-Chain-Data-Exploration/readme.md))
 - [Power BI Data Transformation and Data Model Development](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Supply-Chain-Data-Exploration/readme.md))
 - [Power BI Dashboard Page Visuals](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain-Dashboard-Page-Visuals/readme.md)
-- [Power BI Year-over-Year Sales Trends Page Visuals](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain-Dashboard-Page-Visuals/readme.md)
+- [Power BI Year-over-Year Sales Trends Page Visuals](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain_YoY-Sales_Trends-Page/readme.md)
 
 ## **Data Sources Used** ##
 
