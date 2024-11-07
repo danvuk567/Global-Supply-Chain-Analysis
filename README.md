@@ -28,6 +28,6 @@ sales revenue comparison and forecasted sales trends.
   
 ## **Technologies** ##
 
-- Language: DAX
+- Language: Python, DAX
 - Extraction and transformation: Excel, Power Query
 - Dashboard: Power BI
