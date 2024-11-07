@@ -62,5 +62,7 @@ This Clustered Column Chart applies the count of *Order Id* by *Delivery Status*
 
 ![Power_BI_Supply_Chain_Dashboard_Page_Clustered_Column_Chart.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page_Clustered_Column_Chart.jpg?raw=true)
 
+Here is the the final version of the Dashboard page:
 
+![Power_BI_Supply_Chain_Dashboard_Page.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page.jpg?raw=true)
 
