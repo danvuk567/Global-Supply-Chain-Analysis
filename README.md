@@ -1,10 +1,10 @@
-# Global Supply Chain Analysis
+# Global Supply Chain Big Data Analysis
 
 ![Sales Profit Trend Chart](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Global_Supply_Chain.jpg?raw=true)
 
 ## **Objective** ##
 
-This is a Power BI project I found on DataQuest with the following link: [DataQuest Power BI Global Supply Chain Project](https://www.dataquest.io/blog/power-bi-projects/#project10). The goal is to develop a predictive sales forecasting model using historical sales data. 
+This is a project I found on Kaggle with the following link: [DataCo SMART SUPPLY CHAIN FOR BIG DATA ANALYSIS Project](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis). The goal was to develop a dashboard and 
 Transformations were done in Power BI Power Query to clean and normalize the data into Dimension and Fact tables. Interactive visualizations were created to display various sales KPI's, 
 sales revenue comparison and forecasted sales trends.
 
