@@ -2,7 +2,7 @@
 
 ## Exploratory Data Analysis, Data Cleaning and Relational Data Modelling: *[data_exploration_analysis.ipynb](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Data-Exploration/data_exploration_analysis.ipynb)*
 
-The 1st step is to load the csv file and take a look at the columns. There are 53 columns so we can split it up into 4 dataframes in order to explore the data for all columns in seperate chunks.
+The 1st step is to load the csv file and take a look at the columns. There are 53 columns so we can split it up into 4 dataframes in order to explore the data for all columns in separate chunks.
 
     f_path = r'C:\Users\Daniel\Documents\Projects\Global Supply Chain Analysis\DataCoSupplyChainDataset.csv'
     df_sup = pd.read_csv(f_path, encoding='ISO-8859-1')
@@ -90,7 +90,7 @@ Let's check which Customer columns have values in other columns.
 
 ![Python_df_sup2_info6.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup2_info6.jpg?raw=true)
 
-Now we'll replace the correct values in the correct corresponding columns. We'll leave the Street Names as 'Undefined' since there does't appear to be any unique Street Names for those locations.
+Now we'll replace the correct values in the correct corresponding columns. We'll leave the Street Names as 'Undefined' since there doesn't appear to be any unique Street Names for those locations.
 
     df_sup.loc[df_sup['Customer State'].isin(['91732', '95758']), 'Customer Zipcode'] = df_sup.loc[df_sup['Customer State'].isin(['91732', '95758']), 'Customer State'].astype(float)
     df_sup.loc[df_sup['Customer State'].isin(['91732', '95758']), 'Customer State'] = df_sup.loc[df_sup['Customer State'].isin(['91732', '95758']), 'Customer City']
@@ -251,7 +251,7 @@ Department columns is unique to *Category Id* so we can extract the *Department*
 
 Categories are unique to products based on *Product Card Id* so the *Categories* can be extracted as a Dimension table one level below *Department*. The remaining product columns belong to the *Product* Dimension table one level below *Category*.
 
-For the *Customers* table, we want to ensure that the *Latititude* and *Longitude* are valid geographical coordinates. Are they unique to country, city, state, street and zip code.
+For the *Customers* table, we want to ensure that the *Latitude* and *Longitude* are valid geographical coordinates. Are they unique to country, city, state, street and zip code.
 
         df_loc = df_sup[['Customer City', 'Customer State', 'Customer Country', 'Customer Street', 'Customer Zipcode','Latitude', 'Longitude']].copy()
         df_loc.drop_duplicates(inplace=True)
@@ -261,7 +261,7 @@ For the *Customers* table, we want to ensure that the *Latititude* and *Longitud
 
 ![Python_df_loc_agg1.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_loc_agg1.jpg?raw=true)
 
-We see that for each *Latititude* and *Longitude* coordinates, there are multiple country, city, state, street and zipcode combinations. These don't appear to be valid coordinates so we will drop those 2 columnsfrom df_sup.
+We see that for each *Latitude* and *Longitude* coordinates, there are multiple country, city, state, street and zipcode combinations. These don't appear to be valid coordinates so we will drop those 2 columnsfrom df_sup.
 
         df_sup.drop(columns=['Latitude', 'Longitude'], inplace=True)
 
