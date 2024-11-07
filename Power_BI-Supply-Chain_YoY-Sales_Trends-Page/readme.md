@@ -4,7 +4,7 @@ The following year-over-year Line Charts compare total monthly sales, total mont
 
 ![Power_BI_Supply_Chain_Year_over_Year_Sales_Trends_Page.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Year_over_Year_Sales_Trends_Page.jpg?raw=true)
 
-The purpose of these charts were to dig into what locations and/or order volume impacted the decline of sales and profit in 2017? Since September, total transactions have been increased while total items sold have decreased dramatically. This indicates that less items are purchased more frequently. in filtering through different countries, that no particular country had a significant impact on this observation and it appears to be a cumulative effect across the board. 
+The purpose of these charts were to dig into what locations and/or order volume impacted the decline of sales and profit in 2017? Since September, total transactions have been increased while total items sold have decreased dramatically. This indicates that less items are purchased more frequently. In filtering through different countries, that no particular country had a significant impact on this observation and it appears to be a cumulative effect across the board. 
 
 ![Power_BI_Supply_Chain_Year_over_Year_Sales_Trends_Page_China_2017.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Year_over_Year_Sales_Trends_Page_China_2017.jpg?raw=true)
 
