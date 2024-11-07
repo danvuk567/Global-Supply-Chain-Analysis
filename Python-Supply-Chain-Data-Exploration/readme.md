@@ -1,4 +1,4 @@
-# Python Supply Chain Data Exploration
+# Python Supply Chain Big Data Exploration
 
 ## Exploratory Data Analysis, Data Cleaning and Relational Data Modelling: *[data_exploration_analysis.ipynb](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Data-Exploration/data_exploration_analysis.ipynb)*
 
