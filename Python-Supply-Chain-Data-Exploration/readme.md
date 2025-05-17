@@ -2,8 +2,10 @@
 
 ## Exploratory Data Analysis, Data Validation and Data Cleaning: *[data_exploration_analysis.ipynb](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Data-Exploration/data_exploration_analysis.ipynb)*
 
-The 1st step is to load the csv file and take a look at the columns. There are 53 columns so we can split it up into 4 dataframes in order to explore the data for all columns in separate chunks.
+The 1st step is to import pandas and load the csv file into a dataframe and take a look at the columns. There are 53 columns so we can split it up into 4 dataframes in order to explore the data for all columns in separate chunks.
 
+    import pandas as pd
+    
     f_path = r'C:\Users\Daniel\Documents\Projects\Global Supply Chain Analysis\DataCoSupplyChainDataset.csv'
     df_sup = pd.read_csv(f_path, encoding='ISO-8859-1')
 
