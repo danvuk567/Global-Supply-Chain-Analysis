@@ -1,6 +1,6 @@
 # Python Supply Chain Big Data Exploration
 
-## Exploratory Data Analysis, Data Cleaning and Relational Data Modelling: *[data_exploration_analysis.ipynb](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Data-Exploration/data_exploration_analysis.ipynb)*
+## Exploratory Data Analysis, Data Validation and Data Cleaning: *[data_exploration_analysis.ipynb](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Data-Exploration/data_exploration_analysis.ipynb)*
 
 The 1st step is to load the csv file and take a look at the columns. There are 53 columns so we can split it up into 4 dataframes in order to explore the data for all columns in separate chunks.
 
