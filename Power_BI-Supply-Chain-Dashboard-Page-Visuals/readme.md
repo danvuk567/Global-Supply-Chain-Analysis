@@ -66,4 +66,4 @@ Here is the final version of the Dashboard page:
 
 ![Power_BI_Supply_Chain_Dashboard_Page.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Dashboard_Page.jpg?raw=true)<br/><br/>
 
-:arrow_right: **Next:** [Power BI Supply Chain Dashboard Page Visuals](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain-Dashboard-Page-Visuals)
+:arrow_right: **Next:** [Power BI Supply Chain YoY Sales Trends Page](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain_YoY-Sales_Trends-Page)
