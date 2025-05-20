@@ -12,4 +12,6 @@ Looking into China for 2017, we can see that there was a decrease in total sales
 
 ![Power_BI_Supply_Chain_Year_over_Year_Sales_Trends_Page_Australia_2017.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Supply_Chain_Year_over_Year_Sales_Trends_Page_Australia_2017.jpg?raw=true)
 
-For Australia in 2017, there was a decrease in both total sales and total profits while total transactions, and total items sold were increasing. This indicates that more of less expensive products and/or more products heavily discounted throughout the year creating more losses. 
+For Australia in 2017, there was a decrease in both total sales and total profits while total transactions, and total items sold were increasing. This indicates that more of less expensive products and/or more products heavily discounted throughout the year creating more losses.<br/><br/>
+
+:arrow_right: **Back to:** [Home Page](https://github.com/danvuk567/Global-Supply-Chain-Analysis)
