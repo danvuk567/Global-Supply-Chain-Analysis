@@ -270,3 +270,5 @@ We see that for each *Latitude* and *Longitude* coordinates, there are multiple 
 ![Python_df_sup_final_len.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Python_df_sup_final_len.jpg?raw=true)
 
 Our final columns count is 41. We have removed 12 invalid or duplicate columns.
+
+:arrow_right: **Next:** [Power BI Supply Chain Data Transformation and Data Model Development](https://github.com/danvuk567/Global-Supply-Chain-Analysis/edit/main/Power_BI-Supply-Chain-Data-Transformation-and-Data-Model-Development)
