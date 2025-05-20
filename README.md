@@ -2,11 +2,11 @@
 
 ![Sales Profit Trend Chart](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Global_Supply_Chain.jpg?raw=true)
 
-## **Objective** ##
+## :pushpin: **Objective** ##
 
 This is a project I found on Kaggle with the following link: [DataCo SMART SUPPLY CHAIN FOR BIG DATA ANALYSIS Project](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis). The goal is to analyze supply chain big data to identify order-to-delivery time, sales performance and transaction processing inefficiencies. Exploratory data analysis, data cleaning and data modelling techniques were explored using Python. Transformations were done in Power BI Power Query to clean and normalize the data into Dimension and Fact tables. Interactive visualizations were created in Power BI to display various sales and orders KPIs, product sales performance and sales transaction trends.
 
-## **Highlights** ##
+## :high_brightness: **Highlights** ##
 
 * Total sales, total profit andt total items sold has been on a slight decline from 2015 to 2017.
 * Average sales transactions per day went up in 2017.
@@ -19,19 +19,23 @@ This is a project I found on Kaggle with the following link: [DataCo SMART SUPPL
 * Since September of 2017, total sales transactions have been increased while total items sold have decreased dramatically.
   This indicates that less items are being purchased more frequently towards the end of 2017.
 
-## **Table of Contents** ##
+## :bookmark_tabs: **Table of Contents** ##
 
-- [Python Exploratory Data Analysis](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Supply-Chain-Data-Exploration/readme.md)
-- [Power BI Data Transformation and Data Model Development](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain-Data-Transformation-and-Data-Model-Development/readme.md)
-- [Power BI Dashboard Page Visuals](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain-Dashboard-Page-Visuals/readme.md)
-- [Power BI Year-over-Year Sales Trends Page Visuals](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain_YoY-Sales_Trends-Page/readme.md)
+* [Python Exploratory Data Analysis](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Supply-Chain-Data-Exploration/readme.md)
+* [Power BI Data Transformation and Data Model Development](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain-Data-Transformation-and-Data-Model-Development/readme.md)
+* [Power BI Dashboard Page Visuals](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain-Dashboard-Page-Visuals/readme.md)
+* [Power BI Year-over-Year Sales Trends Page Visuals](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain_YoY-Sales_Trends-Page/readme.md)
 
-## **Data Sources Used** ##
+## :link: **Data Sources Used** ##
 
-- [Global Supply Chain csv file](https://data.mendeley.com/datasets/8gx2fvg2k6/5/files/72784be5-36d3-44fe-b75d-0edbf1999f65/DataCoSupplyChainDataset.csv)
+* [Global Supply Chain csv file](https://data.mendeley.com/datasets/8gx2fvg2k6/5/files/72784be5-36d3-44fe-b75d-0edbf1999f65/DataCoSupplyChainDataset.csv)
   
-## **Technologies** ##
+## :computer: **Technologies** ##
 
-- Language: Python, DAX
-- Extraction and transformation: Excel, Power Query
-- Dashboard: Power BI
+* Language: Python, DAX
+* Extraction and transformation: Excel, Power Query
+* Dashboard: Power BI<br/><br/>
+
+:arrow_right: **Back to:** [Main Page](https://github.com/danvuk567)
+
+  
