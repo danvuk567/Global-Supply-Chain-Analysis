@@ -179,4 +179,6 @@ And our final **Snowflake Schema** Data Model that contains 2 Fact tables and a 
 
 ![Power_BI_Final_Global_Supply_Chain_Data_Model.jpg](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/images/Power_BI_Final_Global_Supply_Chain_Data_Model.jpg?raw=true)<br/><br/>
 
+:arrow_right: **Next:** [Power BI Supply Chain Dashboard Page Visuals](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain-Dashboard-Page-Visuals)
+
 
