@@ -21,10 +21,10 @@ This is a project I found on Kaggle with the following link: [DataCo SMART SUPPL
 
 ## :bookmark_tabs: **Table of Contents** ##
 
-* [Python Exploratory Data Analysis](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Supply-Chain-Data-Exploration/readme.md)
-* [Power BI Data Transformation and Data Model Development](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain-Data-Transformation-and-Data-Model-Development/readme.md)
-* [Power BI Dashboard Page Visuals](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain-Dashboard-Page-Visuals/readme.md)
-* [Power BI Year-over-Year Sales Trends Page Visuals](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain_YoY-Sales_Trends-Page/readme.md)
+* [Python Exploratory Data Analysis](https://github.com/danvuk567/Global-Supply-Chain-Analysis/blob/main/Python-Supply-Chain-Data-Exploration)
+* [Power BI Data Transformation and Data Model Development](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain-Data-Transformation-and-Data-Model-Development)
+* [Power BI Dashboard Page Visuals](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain-Dashboard-Page-Visuals)
+* [Power BI Year-over-Year Sales Trends Page Visuals](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain_YoY-Sales_Trends-Page)
 
 ## :link: **Data Sources Used** ##
 
