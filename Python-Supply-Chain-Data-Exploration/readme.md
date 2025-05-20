@@ -271,4 +271,4 @@ We see that for each *Latitude* and *Longitude* coordinates, there are multiple 
 
 Our final columns count is 41. We have removed 12 invalid or duplicate columns.<br/><br/>
 
-:arrow_right: **Next:** [Power BI Supply Chain Data Transformation and Data Model Development](https://github.com/danvuk567/Global-Supply-Chain-Analysis/edit/main/Power_BI-Supply-Chain-Data-Transformation-and-Data-Model-Development)
+:arrow_right: **Next:** [Power BI Supply Chain Data Transformation and Data Model Development](https://github.com/danvuk567/Global-Supply-Chain-Analysis/tree/main/Power_BI-Supply-Chain-Data-Transformation-and-Data-Model-Development)
